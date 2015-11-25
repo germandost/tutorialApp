@@ -42,6 +42,7 @@ Ext.define('MyApp.view.profile.Actions', {
             text    : '<span class="avatar w-32"><img src="/resources/images/a0.jpg"> <i class="on b-white bottom"></i></span>'
         }];
 
+        
 
         return Ext.Array.merge(['->'], items);
     }

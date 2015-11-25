@@ -14,7 +14,7 @@ Ext.define('MyApp.view.main.Main', {
         'MyApp.view.Canvas'
     ],
 
-    layout        : {
+    layout: {
         type  : 'hbox',
         pack: 'start',
         align: 'stretch'
@@ -27,21 +27,18 @@ Ext.define('MyApp.view.main.Main', {
     viewModel: {
         type: 'main'
     },
-
     cls : 'wrapper',
-
-
     items: [{
         xtype: 'panel',
         region: 'west',
         cls: 'west',
-        html: '<ul class="nav"> <li> <a href="#"> <span class="nav-caret"> <i class="fa fa-caret-down"></i> </span> <span class="nav-label"> <b class="label rounded label-sm warn"> 5 </b> </span> <span class="nav-icon"><i class="fa fa-bars"></i></span> <span class="nav-text">Dashboard</span> </a> <ul class="nav-sub"> <li> <a href="inbox.html"><span class="nav-text">Inbox</span></a> </li><li> <a href="contact.html"><span class="nav-text">Contacts</span></a> </li><li class="hide"> <a><span class="nav-text">Calendar</span></a> </li><li class="hide"> <a><span class="nav-text">Note</span></a> </li><li class="hide"> <a><span class="nav-text">Todo</span></a> </li></ul> </li><li class="active"> <a href="#/app/docs"><span class="nav-icon"><i class="fa fa-dashboard"></i></span> <span class="nav-text">Manage</span></a> </li><li> <a href="#/app/docs"><span class="nav-icon"><i class="fa fa-line-chart"></i></span> <span class="nav-text">Reports</span></a> </li></ul>',
+        //html: '<ul class="nav"> <li> <a href="#"> <span class="nav-caret"> <i class="fa fa-caret-down"></i> </span> <span class="nav-label"> <b class="label rounded label-sm warn"> 5 </b> </span> <span class="nav-icon"><i class="fa fa-bars"></i></span> <span class="nav-text">Dashboard</span> </a> <ul class="nav-sub"> <li> <a href="inbox.html"><span class="nav-text">Inbox</span></a> </li><li> <a href="contact.html"><span class="nav-text">Contacts</span></a> </li><li class="hide"> <a><span class="nav-text">Calendar</span></a> </li><li class="hide"> <a><span class="nav-text">Note</span></a> </li><li class="hide"> <a><span class="nav-text">Todo</span></a> </li></ul> </li><li class="active"> <a href="#/app/docs"><span class="nav-icon"><i class="fa fa-dashboard"></i></span> <span class="nav-text">Manage</span></a> </li><li> <a href="#/app/docs"><span class="nav-icon"><i class="fa fa-line-chart"></i></span> <span class="nav-text">Reports</span></a> </li></ul>',
         width: 200,
         split: true,
         items :{
             xtype   : 'component',
             cls     : 'login-logo',
-            html    : '<a href="#"><img src="/resources/images/Logo.png" style="max-height: 20px;"/></a>'
+            //html    : '<a href="#"><img src="/resources/images/Logo.png" style="max-height: 20px;"/></a>'
         }
     },{
         region: 'center',
@@ -51,5 +48,39 @@ Ext.define('MyApp.view.main.Main', {
         items : {
             xtype : 'canvas'
         }
+    },{
+        xtype:'panel',
+        title:'my benchmark',
+        id:'mybenchmark',
+        flex:1,
+        items:[{
+                xtype:'panel',
+                id:'mybencpanel',
+                height:300,
+                border:true
+
+            },{
+                xtype:'button',
+                text     : 'Button',
+                renderTo : Ext.getBody(),
+                listeners: {
+                    click: function() {
+                        // this == the button, as we are in the local scope
+                        console.log(Ext.getCmp('mybenchmark'))
+                        Ext.Ajax.request({////
+                                url: 'http://localhost:8082/',
+                                success: function(response) {
+                                    Ext.Msg.alert('Success',response.responseText)
+                                },
+                                failure: function(response){
+                                    Ext.Msg.alert('Failure',response)
+                                }
+                        })
+                        Ext.getCmp('mybencpanel').update('<span style="color:orange"><b>text</b><span>')
+                    }
+                }
+        }],
+        
+
     }]
 });

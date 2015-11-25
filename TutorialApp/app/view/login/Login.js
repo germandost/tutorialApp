@@ -43,10 +43,10 @@ Ext.define('MyApp.view.login.Login', {
         buttons: [{
             text: 'Login',
             //xtype: "button",
-            //formBind: true,
-            //listeners: {
-            //    click: 'onLoginClick'
-            //}
+            formBind: true,
+            listeners: {
+                click: 'onLoginClick'
+            }
         }]
     }
 });

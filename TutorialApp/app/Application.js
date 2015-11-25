@@ -6,7 +6,9 @@
 Ext.define('MyApp.Application', {
     extend: 'Ext.app.Application',
     
-    
+    reqires:[
+        Ext.MessageBox
+    ],
     stores: [
         // TODO: add global / shared stores here
     ],
@@ -22,6 +24,8 @@ Ext.define('MyApp.Application', {
 
         // Check to see the current value of the localStorage key
         loggedIn = localStorage.getItem("AppLoggedIn");
+
+        console.log('LoggedIn', loggedIn)
 
         // This ternary operator determines the value of the TutorialLoggedIn key.
         // If TutorialLoggedIn isn't true, we display the login window,

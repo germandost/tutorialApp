@@ -22,13 +22,12 @@ Ext.define('MyApp.view.profile.Profile', {
 
     buildItems : function(){
         var me      = this,
-            items   = [];
- 
- 
+        items   = [];
         items = [{
             xtype  : 'component',
 	        html: '<div class="navbar-item h5">Dashboard</div>',
-			position : 'left'
+			position : 'left',
+
 		},{
             xtype : 'profileactions',
             flex  : 1
