@@ -1,0 +1,51 @@
+{
+  "format": "1",
+  "packages": [
+    {
+      "name": "ext",
+      "format": "1",
+      "version": "6.0.0.227",
+      "compatVersion": "6.0.0",
+      "creator": "Sencha",
+      "summary": "Ext JS",
+      "detailedDescription": "Sencha Ext JS JavaScript Framework",
+      "type": "framework",
+      "signatures": [
+        {
+          "name": "Sencha",
+          "uuid": "e93ebd09-85f5-46b6-bfc1-c7f06cf0b8a5",
+          "created": "2015-04-07T23:16:23Z",
+          "algorithm": "SHA1withRSA",
+          "nonce": "GXOb40yu4MU\u003d",
+          "signature": "qR9IACgN9wG0UF6+WXYTzyb52GSrFEkmcRbbVzky2XwO2qh9XVdm4V+N3iLu0dYt+OcGqVFhU/RXeHYbE7gxMEzAzE0NtENtuxhmcamTpkVVgdMsv8yFGrReUkP0MqGYsFOEs4lDIDJWQpe+TMqk5zWjNiVeaOmmTP95cvINqUDRsQz/UsYSeBobMsACKtmcrm8hfA7yEwiqfc3gwNQmgtyPMNl6aI+bhTarx3QP9kSXlaW11QdX/u2VTnKSMoZhwcbWwlL3EhcRhARjYuQ6FHp/L8+e3jtHRKqVx67jDSySEAG/z8P4XcCn8XNWETE+MdD4kLDRfG+EpfvFndN8QPiIaeOF1fFiAVGlyfhlk95GG6T+xHrqhpVBcFWn0OrUYBgOMR7o8gsaD7PsU72zwiREA8RUUmdxc/H5AgOvTD/LHopnAJI+3j5Ks2a0W3oTCNBqD+RE4hLxuX13zzsNOf5vPomInHz9BBfRuxbEyLdLkxk1GX8LcSuf7QJnzalUT361qwY33OZ5n5QkaRzCe8jkdTd/UoZlku9VWKH4UWETQ4g/Ox+pguFClGmU89rP1b3LxmhKw7iKts1XMkOruapGShkPmytVuWzO+Gdivnkk/Uz71/c54Rg+N+ECvLsCh0aIqI3utluAHa/u19h7bRt4j9/h4h2cxBD8i6XTt3w\u003d"
+        }
+      ],
+      "resources": [
+        "resources"
+      ]
+    },
+    {
+      "name": "ext",
+      "format": "1",
+      "version": "6.0.0.415",
+      "compatVersion": "6.0.0",
+      "creator": "Sencha",
+      "summary": "Ext JS",
+      "detailedDescription": "Sencha Ext JS JavaScript Framework",
+      "type": "framework",
+      "signatures": [
+        {
+          "name": "Sencha",
+          "uuid": "e93ebd09-85f5-46b6-bfc1-c7f06cf0b8a5",
+          "created": "2015-05-26T22:01:11Z",
+          "algorithm": "SHA1withRSA",
+          "nonce": "VqDF8IN0TmQ\u003d",
+          "signature": "JSq5eeTDiizYutfgwBZ8LlO/Xfl9bhTz3envnzQcZzRXIQ29kw43U86FjWJ7hs4wsOcUESeRIuw0kIoO4qFP73nYVHa2tknhylLjBPtelRJhSD+GjKdEHn+ViN6cibihuxpx5w449Sq+7+pYZoqQOG3zKQAoyONGhk+N4AMzELR/P8ZJQ5xaFKKDtseY7Nu5eNKDLQMJY7rad7W/28WETMa81khUrwEVu0J7AiFVpVuPSWJPJqXoJxy5IQmI7OUjLk2ggxRTJfPXFeShTq8vHKF8iHhq57PGEivRYvCi0y4f0BUnRDgio9AlaM2ECY0noqugZ144RBg1dHDsA7qBTzHjMpca0SUu+Dk4zxyBvkjhV6dbBzftUGDN5agq9vOEfmbSn52rCW6GB6JEJApZ/AZPaqYLhPrzLz6rhBWfnnpK4myFKqglr/s/wZH33DBKbth2XIxrE+uhajCgOWJ+fZeFiBj0fd9b9OSoTYGm9a8Y1HMiEBfAO7AmiifPQU36GZmcbCOSLc3nWIWw4mIS5AUBo9VQlRjH/ZQLZLOY/XbArZ7qztYvEdaq2e79NOZQcO+L/WwizOtcetpUKfE37G9ZjcHNeJw/VjXsXVrlFHtIrgd0XRJAhWCI2KIL7k1QW53e/3ukecNHJrJmvEaBccQx2kU8ZPBvnLbBu70uBEU\u003d"
+        }
+      ],
+      "resources": [
+        "resources"
+      ]
+    }
+  ]
+}
